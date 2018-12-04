@@ -1,8 +1,0 @@
-behave==1.2.6
-behave2cucumber==1.0.3
-parse==1.9.0
-parse-type==0.4.2
-pkg-resources==0.0.0
-selenium==3.14.1
-six==1.11.0
-urllib3==1.23

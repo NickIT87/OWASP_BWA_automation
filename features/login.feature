@@ -1,11 +1,10 @@
+Feature: A1 injection: HTML injection - reflected(GET)
 
-Feature: Authorization in an bWAPP
-#test comment
-   Scenario Outline: Check positive data login functionality
-     Given Login to bWAPP as a bee user
-     #Then Login as <username>, <password>
-     #When The authorization as <username> complete, we check logout function
+   Scenario Outline: negative input field testing
+     Given select option <value> in the bug list and press hack
+     Then enter data <firstname>, <lastname> and submit the form
+     #When The ...
 
-     Examples: By valid data
-     | username  | password |
-     | bee       | bug      |
+     Examples: By incorrect data
+     | value | firstname       | lastname |
+     | 2     | <h1>HACKED</h1> | <p></p>  |
