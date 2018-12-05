@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e9d722c-7535-4196-b92c-6aeab80f8c85" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/environment.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/A1_HTML_reflectedGET.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/A1_HTML_reflectedGET.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/LoginPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/LoginPage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/elements/A1_HTML_reflectedGET.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/elements/A1_HTML_reflectedGET.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/steps/global_steps.py" beforeDir="false" afterPath="$PROJECT_DIR$/steps/global_steps.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,11 +39,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/environment.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="341">
-                  <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+                  <caret line="11" column="52" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
                   <folding>
                     <element signature="e#0#30#0" expanded="true" />
                   </folding>
@@ -55,11 +51,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/pages/LoginPage.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="660">
-                  <caret line="26" column="37" lean-forward="true" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+                <state relative-caret-position="615">
+                  <caret line="25" column="71" selection-start-line="25" selection-start-column="71" selection-end-line="25" selection-end-column="71" />
                   <folding>
                     <element signature="e#47#90#0" expanded="true" />
                   </folding>
@@ -138,10 +134,10 @@
         <option value="$PROJECT_DIR$/features/login.feature" />
         <option value="$PROJECT_DIR$/pages/MainPage.py" />
         <option value="$PROJECT_DIR$/pages/elements/A1_HTML_reflectedGET.py" />
-        <option value="$PROJECT_DIR$/pages/LoginPage.py" />
         <option value="$PROJECT_DIR$/features/A1_HTML_reflectedGET.feature" />
         <option value="$PROJECT_DIR$/steps/global_steps.py" />
         <option value="$PROJECT_DIR$/environment.py" />
+        <option value="$PROJECT_DIR$/pages/LoginPage.py" />
       </list>
     </option>
   </component>
@@ -278,16 +274,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/LoginPage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="26" column="37" lean-forward="true" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
-          <folding>
-            <element signature="e#47#90#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/steps/global_steps.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="677">
@@ -311,9 +297,19 @@
     <entry file="file://$PROJECT_DIR$/environment.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="341">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <caret line="11" column="52" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/LoginPage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="25" column="71" selection-start-line="25" selection-start-column="71" selection-end-line="25" selection-end-column="71" />
+          <folding>
+            <element signature="e#47#90#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -24,4 +24,4 @@ class LoginForm(PageConstructor):
 
     def setSecurityLevel(self, value):
         select = Select(self.findElement(self.DROPDOWN_SECURITY_LEVEL))
-        select.select_by_value(value)
+        select.select_by_visible_text(value)
