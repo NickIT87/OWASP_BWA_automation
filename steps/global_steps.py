@@ -16,6 +16,9 @@ def step_select_feature_to_test(context, value):
 def step_filling_the_form(context, firstname, lastname):
     ActionForm(context.driver).exploit(firstname, lastname)
 
-@When('The ...')
-def step_the(context):
-    time.sleep(1)
+#____Step - expected result: injection code not included____
+#_______ "<div id=main>" include <firstname> string ________
+@When('the form is submited this {firstname} string must be including into div#main')
+def step_check_expected_result(context, firstname):
+    ActionForm(context.driver).check_actual_result(firstname)
+    #time.sleep(2)

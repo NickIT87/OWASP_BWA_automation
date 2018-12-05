@@ -9,6 +9,7 @@ def before_feature(context, scenario):
 def before_scenario(context, scenario):
     context.driver.maximize_window()
     context.driver.get(LoginForm.URL)
+    LoginForm(context.driver).setSecurityLevel("2")
     LoginForm(context.driver).login()
 
 def after_feature(context, scenario):

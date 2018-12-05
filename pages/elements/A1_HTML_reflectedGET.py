@@ -10,10 +10,12 @@ class ActionForm(PageConstructor):
     FIRST_NAME_INPUT = (By.ID, 'firstname')
     LAST_NAME_INPUT = (By.ID, 'lastname')
     GO_BUTTON = (By.NAME, 'form')
+    DIV_MAIN = (By.ID, 'main')
 
     def exploit(self, firstname, lastname):
-        first_input = self.findElement(self.FIRST_NAME_INPUT)
-        first_input.send_keys(firstname)
-        last_input = self.findElement(self.LAST_NAME_INPUT)
-        last_input.send_keys(lastname)
+        self.findElement(self.FIRST_NAME_INPUT).send_keys(firstname)
+        self.findElement(self.LAST_NAME_INPUT).send_keys(lastname)
         self.findVisibleElement(self.GO_BUTTON).click()
+
+    def check_actual_result(self, firstname):
+        self.checkTextPresentInElem(self.DIV_MAIN, firstname)
