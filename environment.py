@@ -12,4 +12,4 @@ def before_scenario(context, scenario):
     LoginForm(context.driver).login()
 
 def after_feature(context, scenario):
-    context.driver.quit()
+    context.driver.close()

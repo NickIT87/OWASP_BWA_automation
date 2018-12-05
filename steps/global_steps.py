@@ -1,23 +1,21 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-
+import time
 from behave import *
 from pages.MainPage import BugListForm
+from pages.elements.A1_HTML_reflectedGET import ActionForm
 
 
-#____________ Global step - login to resource _________
+#____________ Global step - select feature to test _________
 @Given('select option {value} in the bug list and press hack')
 def step_select_feature_to_test(context, value):
-    BugListForm(context.driver).chose_value(value)
+    BugListForm(context.driver).chose_feature(value)
 
-
-
-    #context.driver.maximize_window()
-    #context.driver.get(LoginForm.URL)
-    #LoginForm(context.driver).login()
-    #auth_form = LoginForm(context.driver)
-    #auth_form.login()
-
+#________ Step - test HTML injection reflected(GET) ________
 @Then('enter data {firstname}, {lastname} and submit the form')
 def step_filling_the_form(context, firstname, lastname):
-    pass
+    ActionForm(context.driver).exploit(firstname, lastname)
+
+@When('The ...')
+def step_the(context):
+    time.sleep(1)
