@@ -19,5 +19,6 @@ def step_filling_the_form(context, firstname, lastname):
 #_____ Step 2 - A1 injection: HTML injection reflected(GET)_____
 @When('the form is submited this {firstname} string must be including into div#main')
 def step_check_expected_result(context, firstname):
+    #ActionForm.get_screenshot()
     ActionForm(context.driver).check_actual_result(firstname)
     #time.sleep(2)

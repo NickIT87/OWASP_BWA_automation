@@ -1,0 +1,200 @@
+
+        <html>
+        <head>
+            <title>TESTS-features.A1_HTML_reflectedGET.xml - Junit Test Report</title>
+            <style type="text/css">
+              h1 {
+    font-family: sans-serif;
+}
+h2 {
+    font-family: sans-serif;
+}
+
+li > a {
+    font-family: monospace;
+}
+
+body {
+    margin-bottom: 3em;
+}
+
+.testclass > td {
+    border-bottom: 1px solid silver;
+    color: #222222;
+    padding: 3px;
+    font-weight: bold;
+}
+
+.testclass > div {
+    padding-left: 1em;
+}
+
+.testclass > a > div {
+    font-size: 1.3em;
+    font-family: sans-serif;
+}
+
+.testcase > div {
+    border-left: 3px solid black;
+    padding-left: 1em;
+}
+
+.testcase pre {
+    display: block;
+    padding: 4px;
+    margin-right: 1em;
+    background-color: #121212;
+    color: #dedede;
+    white-space: pre-wrap;
+}
+
+.testcase .details b {
+    font-size: 1.2em;
+}
+
+.stdout, .stderr, .property {
+    margin-left: 1em;
+}
+
+.testcase-link {
+    text-decoration: none;
+}
+
+.testcase-cell {
+    height: 1.8em;
+    width: 1.8em;
+    vertical-align: middle;
+    text-align: center;
+}
+.testcase-cell a {
+    display: inline-block;
+    margin: -1em;
+    padding: 1em;
+}
+
+.testcase-combined {
+    white-space: pre;
+    padding-left: 1em;
+}
+
+.skipped {
+    background-color: gold;
+}
+
+.failed {
+    background-color: lightcoral;
+}
+
+.passed {
+    background-color: limegreen;
+}
+
+.tooltip {
+    visibility: hidden;
+    padding: 2px;
+    z-index: 1;
+    position: absolute;
+    background: cornsilk;
+    border: 1px solid black;
+    margin-top: 15px;
+    margin-left: 10px;
+    opacity: 0;
+}
+.tooltip-parent:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.testcase:hover {
+    background-color: gray;
+    color: white;
+}
+
+.result-stats {
+    margin: auto;
+}
+
+            </style>
+        </head><body><h1>Test Report</h1>
+        <div class="testsuite">
+            <h2>Test Suite: features.A1_HTML_reflectedGET.A1 injection: HTML injection - reflected(GET)</h2><a name="899f6598-dbd9-4f75-8a28-064f27dd4c8d">
+            
+            
+            <table>
+            <tr><th align="left">Duration</th><td align="right">0.869676 sec</td></tr>
+            <tr><th align="left">Test Cases</th><td align="right">1</td></tr>
+            <tr><th align="left">Failures</th><td align="right">0</td></tr>
+            
+            
+            </table>
+            <a name="toc"></a>
+            <h2>Results Index</h2>
+            
+        <ul>
+            
+            
+            <li>All Test Classes
+            <ul>
+            <li>
+                <a href="#e9034be9-9dc8-4f71-80b2-cbe1bc35d0ef">features.A1_HTML_reflectedGET.A1 injection: HTML injection - reflected(GET)</a>
+                <ul>
+                
+                    <li>
+                        <a href="#5369f5fd-4327-44f7-ad50-95658e9eb1a2">negative input field testing -- @1.1 By incorrect data</a>
+                    </li>
+                    
+                </ul>
+            </li>
+            </ul>
+            </li>
+        </ul>
+        
+            <hr size="2"/>
+            <h2>Test Results</h2>
+            <div class="testclasses">
+            
+        <hr size="2"/>
+        <a name="e9034be9-9dc8-4f71-80b2-cbe1bc35d0ef">
+        <div class="testclass">
+            <div>Test Class: features.A1_HTML_reflectedGET.A1 injection: HTML injection - reflected(GET)</div>
+            <div class="testcases">
+            
+    <a name="5369f5fd-4327-44f7-ad50-95658e9eb1a2">
+        <div class="testcase">
+            <div class="details">
+                <span class="testname"><b>negative input field testing -- @1.1 By incorrect data</b></span><br/>
+                <span class="testclassname">features.A1_HTML_reflectedGET.A1 injection: HTML injection - reflected(GET)</span><br/>
+                <span class="duration">Time Taken: 0.869676s</span>
+            </div>
+            
+            
+            <hr size="1"/>
+            
+            
+            <div class="stdout"><i>Stdout</i><br/>
+                <pre>
+
+@scenario.begin
+  Scenario Outline: negative input field testing -- @1.1 By incorrect data
+    Given select option 2 in the bug list and press hack ... passed in 0.304s
+    Then enter data &lt;h1&gt;HACKED&lt;/h1&gt;, &lt;p&gt;&lt;/p&gt; and submit the form ... passed in 0.484s
+    When the form is submited this &lt;h1&gt;HACKED&lt;/h1&gt; string must be including into div#main ... passed in 0.082s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+</pre></div>
+            <hr size="1"/>
+            <div class="stderr"><i>Stderr</i><br/>
+                <pre></pre></div>
+                
+        </div>
+    </a>
+        
+            </div>
+        </div>
+        </a>
+        
+            </div>
+        </div>
+        </body></html>

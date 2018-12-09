@@ -18,4 +18,5 @@ class ActionForm(PageConstructor):
         self.findVisibleElement(self.GO_BUTTON).click()
 
     def check_actual_result(self, firstname):
+        #self.get_screenshot()
         self.checkTextPresentInElem(self.DIV_MAIN, firstname)

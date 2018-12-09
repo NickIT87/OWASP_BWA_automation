@@ -1,8 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-#import time
+import time
 import unittest
+import pyautogui
 #from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions
@@ -16,27 +17,32 @@ class PageConstructor(unittest.TestCase):
         self.driver = driver
     #global method - find and return element if this element is visible
     def findVisibleElement(self, locator):
-        element = WebDriverWait(self.driver, 10).\
+        element = WebDriverWait(self.driver, 5).\
             until(expected_conditions.visibility_of_element_located(locator))
         return element
     #global method - find and return element if this element is present in DOM
     def findElement(self, locator):
-        element = WebDriverWait(self.driver, 10).\
+        element = WebDriverWait(self.driver, 5).\
             until(expected_conditions.presence_of_element_located(locator))
         return element
     #global method - find and return list of elements if this elements is present in DOM
     def findElems(self, locator):
-        elements = WebDriverWait(self.driver, 10).\
+        elements = WebDriverWait(self.driver, 5).\
             until(expected_conditions.presence_of_all_elements_located(locator))
         return elements
     #global method - Check text present in element
     def checkTextPresentInElem(self, locator, text):
-        WebDriverWait(self.driver,10).\
+        WebDriverWait(self.driver, 5).\
             until(expected_conditions.text_to_be_present_in_element(locator, text))
     # global method - Check element to be enabled
     def checkElementToBeClickable(self, locator):
-        WebDriverWait(self.driver, 10). \
+        WebDriverWait(self.driver, 5). \
             until(expected_conditions.element_to_be_clickable(locator))
+
+    def get_screenshot(self):
+        time.sleep(0.5)
+        screen = pyautogui.screenshot()
+        screen.save("test.png")
 
     def clickViaScript(self, element):
         """
