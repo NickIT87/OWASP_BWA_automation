@@ -7,7 +7,7 @@ from pages.elements.A1_HTML_reflectedGET import ActionForm
 
 
 #___________ Global 0 step - select feature to test ____________
-@Given('select option {value} in the bug list and press hack')
+@Given('option {value} in the bug list and press hack')
 def step_select_feature_to_test(context, value):
     BugListForm(context.driver).chose_feature(value)
 

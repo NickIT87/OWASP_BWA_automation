@@ -1,7 +1,7 @@
 Feature: A1 injection: HTML injection - reflected(GET)
 
    Scenario Outline: negative input field testing
-     Given select option <value> in the bug list and press hack
+     Given option <value> in the bug list and press hack
      Then enter data <firstname>, <lastname> and submit the form
      When the form is submited this <firstname> string must be including into div#main
         #expected result:
