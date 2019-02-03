@@ -1,10 +1,10 @@
-<testsuite errors="0" failures="0" hostname="Computer" name="features.A1_HTML_reflectedGET.A1 injection: HTML injection - reflected(GET)" skipped="0" tests="1" time="0.621247" timestamp="2019-02-01T15:23:11.862257"><testcase classname="features.A1_HTML_reflectedGET.A1 injection: HTML injection - reflected(GET)" name="negative input field testing -- @1.1 By incorrect data" status="passed" time="0.621247"><system-out>
+<testsuite errors="0" failures="0" hostname="parrot" name="features.A1_HTML_reflectedGET.A1 injection: HTML injection - reflected(GET)" skipped="0" tests="1" time="0.858341" timestamp="2019-02-03T09:10:37.295508"><testcase classname="features.A1_HTML_reflectedGET.A1 injection: HTML injection - reflected(GET)" name="negative input field testing -- @1.1 By incorrect data" status="passed" time="0.858341"><system-out>
 <![CDATA[
 @scenario.begin
   Scenario Outline: negative input field testing -- @1.1 By incorrect data
-    Given option 2 in the bug list and press hack ... passed in 0.268s
-    Then enter data <h1>HACKED</h1>, <p></p> and submit the form ... passed in 0.301s
-    When the form is submited this <h1>HACKED</h1> string must be including into div#main ... passed in 0.052s
+    Given option 2 in the bug list and press hack ... passed in 0.284s
+    Then enter data <h1>HACKED</h1>, <p></p> and submit the form ... passed in 0.495s
+    When the form is submited this <h1>HACKED</h1> string must be including into div#main ... passed in 0.080s
 
 @scenario.end
 --------------------------------------------------------------------------------

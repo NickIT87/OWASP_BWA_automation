@@ -1,0 +1,23 @@
+<testsuite errors="0" failures="0" hostname="parrot" name="features.A1_SQL_injection_search.A1 injection: SQL injection GET/POST search" skipped="0" tests="2" time="1.523741" timestamp="2019-02-03T09:10:42.555491"><testcase classname="features.A1_SQL_injection_search.A1 injection: SQL injection GET/POST search" name="The simplest case to detect error -- @1.1 By incorrect data" status="passed" time="0.67988"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: The simplest case to detect error -- @1.1 By incorrect data
+    Given option 15 in the bug list and press hack ... passed in 0.326s
+    Then enter data ' and submit the form ... passed in 0.277s
+    When the form is submited this No movies were found! must be including into table#table_yellow ... passed in 0.077s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="features.A1_SQL_injection_search.A1 injection: SQL injection GET/POST search" name="The simplest case to detect error -- @1.2 By incorrect data" status="passed" time="0.843861"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: The simplest case to detect error -- @1.2 By incorrect data
+    Given option 13 in the bug list and press hack ... passed in 0.251s
+    Then enter data 'union select 1,@@version,3,4,5,6,7-- - and submit the form ... passed in 0.530s
+    When the form is submited this No movies were found! must be including into table#table_yellow ... passed in 0.063s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>
