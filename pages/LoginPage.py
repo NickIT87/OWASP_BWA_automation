@@ -8,7 +8,7 @@ from selenium.webdriver.support.ui import Select
 
 class LoginForm(PageConstructor):
     # locators for this page
-    URL = 'http://192.168.190.131/bWAPP/login.php'
+    URL = 'http://192.168.0.102/bWAPP/login.php'
     LOGIN_INPUT = (By.NAME, 'login')
     PASSWORD_INPUT = (By.NAME, 'password')
     LOGIN_BUTTON = (By.NAME, 'form')

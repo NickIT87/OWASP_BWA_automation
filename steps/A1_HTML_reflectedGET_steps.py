@@ -2,14 +2,8 @@
 # -*- coding: utf-8 -*-
 import time
 from behave import *
-from pages.MainPage import BugListForm
 from pages.elements.A1_HTML_reflectedGET import ActionForm
 
-
-#___________ Global 0 step - select feature to test ____________
-@Given('option {value} in the bug list and press hack')
-def step_select_feature_to_test(context, value):
-    BugListForm(context.driver).chose_feature(value)
 
 #_____ Step 1 - A1 injection: HTML injection reflected(GET)_____
 @Then('enter data {firstname}, {lastname} and submit the form')
