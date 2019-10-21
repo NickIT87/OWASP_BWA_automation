@@ -19,5 +19,5 @@ python-nmap==0.6.1
 PyTweening==1.0.3
 selenium==3.14.1
 six==1.11.0
-urllib3==1.23
+urllib3==1.24.2
 xlib==0.21
