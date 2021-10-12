@@ -5,7 +5,7 @@ junit2html==22
 kiwisolver==1.0.1
 matplotlib==3.0.2
 numpy==1.15.4
-opencv-python==3.4.4.19
+opencv-python==3.4.7.28
 parse==1.9.0
 parse-type==0.4.2
 Pillow==5.3.0
