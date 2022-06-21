@@ -4,7 +4,7 @@ cycler==0.10.0
 junit2html==22
 kiwisolver==1.0.1
 matplotlib==3.0.2
-numpy==1.15.4
+numpy==1.22.0
 opencv-python==3.4.4.19
 parse==1.9.0
 parse-type==0.4.2
